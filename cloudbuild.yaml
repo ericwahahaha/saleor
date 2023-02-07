@@ -1,0 +1,15 @@
+steps:
+#- name: python
+#  entrypoint: python
+#  args: ["-m", "venv", "saleor-venv"]
+#- name: python
+#  entrypoint: python
+#  args: ["-m", "pip", "install", "-r", "requirements.txt"]
+#  env:
+#    - 'DB_NAME=${_DB_NAME}'
+#    - 'INS_CON_NAME=/cloudsql/${_INS_CON_NAME}'
+#    - 'DB_USERNAME=${_DB_USERNAME}'
+#    - 'DB_PASSWORD=${_DB_PASSWORD}'
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "app.yaml"]
+timeout: "1600s"

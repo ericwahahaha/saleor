@@ -1,3 +1,8 @@
+runtime: python39
+service: saleor
+
+instance_class: F2
+
 #
 # Copyright 2021 Google LLC
 #
@@ -16,13 +21,13 @@
 
 # [START django_app]
 # [START gaestd_py_django_app_yaml]
-runtime: python39
+#runtime: python39
 
 env_variables:
   # This setting is used in settings.py to configure your ALLOWED_HOSTS
   # APPENGINE_URL: PROJECT_ID.uc.r.appspot.com
 
-handlers:
+#handlers:
 # This configures Google App Engine to serve the files in the app's static
 # directory.
 #- url: /static

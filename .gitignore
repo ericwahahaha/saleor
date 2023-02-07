@@ -6,6 +6,7 @@
 !.nvmrc
 !.pylintrc
 !.vscode
+!.gcloudignore
 *.log
 *.pot
 *.pyc

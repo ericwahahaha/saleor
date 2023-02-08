@@ -40,3 +40,7 @@ env_variables:
 #  script: auto
 # [END gaestd_py_django_app_yaml]
 # [END django_app]
+
+
+entrypoint: gunicorn -b :8000 --workers 4 --worker-class saleor.asgi.gunicorn_worker.UvicornWorker saleor.asgi:application
+
